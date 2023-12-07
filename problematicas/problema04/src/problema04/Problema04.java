@@ -14,7 +14,19 @@ public class Problema04 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int n = 10;
+        for (int a = 1; a < n; a++) {
+            for (int e = 1; e < a; e++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        for (int a = n - 1; a >= 1; a--) {
+            for (int e = 1; e <= a; e++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
-    
+
 }
