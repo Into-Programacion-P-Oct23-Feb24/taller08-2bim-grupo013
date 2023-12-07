@@ -33,6 +33,8 @@ public class Problema01 {
         String listedades = "";
         double promedio = 0 ;
         double promedio2 = 0 ;
+        double sumaedad = 0 ;
+        double sumaestat = 0 ;
 
         System.out.println("Ingrese el numero de jugadores a ingresar");
         limite = entrada.nextInt();
@@ -47,11 +49,14 @@ public class Problema01 {
             System.out.println("Ingrese la estatura");
             estatura = entrada.nextDouble();
 
-            edad = edad + 1;
+            listedades = String.format("%s%s ",listedades, edad);
             
-            promedio = edad / limite ;
+            sumaedad = sumaedad + edad ;
+            promedio = sumaedad / limite ;
             
-            promedio2 = estatura / limite ;
+            sumaestat = sumaestat + estatura ;
+            promedio2= sumaestat / limite ;
+            
             
             reporte = String.format("%s%d. %s -%s-,edad: %d,estatura %s\n",
                     reporte, i, nombre,
@@ -59,13 +64,17 @@ public class Problema01 {
 
         }
         entrada.nextLine();
-        edades = String.format("%sListado de Edades %s", edades, edad);
+        edades = String.format("%sListado de Edades: %s ",
+                edades, listedades);
         
-        promEdad = String.format("%sPromedio de edades: %s", promEdad, promedio);
+        promEdad = String.format("%sPromedio de edades: %.2f",
+                promEdad, promedio);
         
-        promEstat = String.format("%sPromedio de estaturas: %s", promEstat, promedio2);
+        promEstat = String.format("%sPromedio de estaturas: %.2f",
+                promEstat, promedio2);
 
-        System.out.printf("%s\n%s\n\n%s\n\n%s\n\n", reporte, edades, promEdad, promEstat);
+        System.out.printf("%s\n%s\n\n%s\n\n%s\n\n",
+                reporte, edades, promEdad, promEstat);
 
     }
 
