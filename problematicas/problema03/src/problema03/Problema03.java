@@ -12,16 +12,14 @@ public class Problema03 {
                 + "Grados Celsius\n";
         int i;
         int e = 20;
-        for (i = 1; i < 20; i++) {
-            e+=4;
+        for (i = 1; i <= 20; i++) {
             gradosC = (e - 32.0) * 5 / 9;
             tabla = String.format("%s      %s                "
                     + "%.2f\n", tabla, e, gradosC);
+            e += 4;
         }
-        System.out.print(tabla); 
+        System.out.print(tabla);
 
     }
 
 }
-
-
