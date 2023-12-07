@@ -8,16 +8,14 @@ public class Problema03 {
         Scanner entrada = new Scanner(System.in);
         double gradosC = 1;
         double gradosF = 20;
-        String tabla = "Tabla De converciones\n";
+        String tabla = "Tabla De converciones\nGrados Fahrenheit  |  Grados Celsius\n";
         int i;
-        System.out.print("Grados F: ");
-        gradosF = entrada.nextDouble();
-
+        int e = 20;
         for (i = 1; i < 20; i++) {
-            int e = 1;
-            e++;
-            gradosC = (i - 32.0) * 5 / 9;
-            tabla = String.format("%s%s %s\n", tabla, i, gradosC);
+            e+=4;
+            gradosC = (e - 32.0) * 5 / 9;
+            tabla = String.format("%s      %s                "
+                    + "%.2f\n", tabla, e, gradosC);
         }
         System.out.print(tabla);
 
