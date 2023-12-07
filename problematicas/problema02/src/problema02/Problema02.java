@@ -14,15 +14,16 @@ public class Problema02 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int contador = 0;
-        for (int i = 30; i >= contador; i--) {
-            int v = i * 2;
-            int a = i * 3;
-            int b = i *4;      
-            System.out.printf("%d-%d-%d-%d\n", i, v,a,b);        
+        int contador = 10;
+        for (int a = 30; a >= contador; a--) {
+            int b = a * 2;
+            int c = a * 3;
+            int d = a *4;      
+            System.out.printf("%d-%d-%d-%d\n", a, b,c,d);        
         }
     }
 }
+
 
 
 
