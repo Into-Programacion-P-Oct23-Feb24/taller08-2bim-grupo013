@@ -9,14 +9,16 @@ public class Problema03 {
         double gradosC = 1;
         double gradosF = 1;
         String tabla = "Tabla De converciones\n";
-        System.out.print("Grados F: ");
         gradosF = entrada.nextDouble();
+        int columnas = 0 ;
         
-        for (int i = 0; i <= 20; i++) {
-            gradosC = (i - 32.0) * 5 / 9;
-            tabla = String.format("", tabla);
+        for (int i = 20; columnas <= 20; i++) {
             
+            gradosC = (i - 32) * 5 / 9;
+            
+            tabla = String.format("%s\n%s",tabla, gradosC) ;
         }
+        System.out.printf("s", tabla);
 
     }
 
