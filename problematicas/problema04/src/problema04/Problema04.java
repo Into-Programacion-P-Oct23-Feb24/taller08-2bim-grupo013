@@ -17,7 +17,7 @@ public class Problema04 {
         int n = 10;
         for (int a = 1; a < n; a++) {
             for (int e = 1; e < a; e++) {
-                System.out.print("*");
+                System.out.println("*");
             }
             System.out.println();
         }
