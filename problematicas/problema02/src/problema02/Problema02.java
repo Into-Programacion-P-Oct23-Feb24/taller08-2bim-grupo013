@@ -16,18 +16,13 @@ public class Problema02 {
     public static void main(String[] args) {
         int contador = 0;
         for (int i = 30; i >= contador; i--) {
-            System.out.println(i);
-        }
-        for (int i = 60; i >= contador; i--) {
-            System.out.println(i);
-        }
-        for (int i = 90; i >= contador; i--) {
-            System.out.println(i);
-        }
-        for (int i = 120; i >= contador; i--) {
-            System.out.println(i);
+            int v = i * 2;
+            int a = i * 3;
+            int b = i *4;      
+            System.out.printf("%d-%d-%d-%d\n", i, v,a,b);        
         }
     }
 }
+
 
 
