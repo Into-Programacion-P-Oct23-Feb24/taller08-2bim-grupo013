@@ -14,7 +14,7 @@ public class Problema03 {
         
         for (int i = 0; i <= 20; i++) {
             gradosC = (i - 32.0) * 5 / 9;
-            System.out.println(gradosC);
+            tabla = String.format("", tabla);
             
         }
 
