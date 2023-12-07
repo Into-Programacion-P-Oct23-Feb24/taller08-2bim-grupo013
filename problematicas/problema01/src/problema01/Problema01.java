@@ -58,7 +58,7 @@ public class Problema01 {
             promedio2= sumaestat / limite ;
             
             
-            reporte = String.format("%s%d. %s -%s-,edad: %d,estatura %s\n",
+            reporte = String.format("%s%d. %s -%s-,edad %d,estatura %s\n",
                     reporte, i, nombre,
                     posicion, edad, estatura);
 
