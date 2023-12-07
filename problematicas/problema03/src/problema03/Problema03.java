@@ -8,7 +8,8 @@ public class Problema03 {
         Scanner entrada = new Scanner(System.in);
         double gradosC = 1;
         double gradosF = 20;
-        String tabla = "Tabla De converciones\nGrados Fahrenheit  |  Grados Celsius\n";
+        String tabla = "       Tabla De converciones\nGrados Fahrenheit  |  "
+                + "Grados Celsius\n";
         int i;
         int e = 20;
         for (i = 1; i < 20; i++) {
