@@ -14,7 +14,17 @@ public class Problema02 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int contador = 10;
+        for (int a = 30; a >= contador; a--) {
+            int b = a * 2;
+            int c = a * 3;
+            int d = a *4;      
+            System.out.printf("%d-%d-%d-%d\n", a, b,c,d);        
+        }
     }
-    
 }
+
+
+
+
+
